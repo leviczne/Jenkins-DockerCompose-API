@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pessoal\\source\\repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {}
+    "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pessoal\\source\\repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {
+    "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pessoal\\source\\repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+        "projectUniqueName": "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
         "projectName": "SistemaDeCadastroAPI",
-        "projectPath": "C:\\Users\\Pessoal\\source\\repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
-        "packagesPath": "C:\\Users\\Pessoal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pessoal\\source\\repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI\\obj\\",
+        "projectPath": "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+        "packagesPath": "C:\\Users\\levi.santos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pessoal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\levi.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
