@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l/YwW2ZsqlMOMKYOFuveWLpcJNeD/Zg5CS2M8w5NcIDeVTAzh6KtyaSEmT3s7jnKYYFpRBE4a5hR6e7CkoBSnw==",
+  "dgSpecHash": "BTcsnuLEQqBhyjJHgUzzwzs792V1VZKQlXUmqStk8e7fDncOpIQbWScMo+54+8nyPIcQvZ1omO+pIZJG6cdjZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+  "projectFilePath": "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\levi.santos\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\levi.santos\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

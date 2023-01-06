@@ -25,7 +25,7 @@ namespace SistemaDeCadastroAPI.Data
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-45OORD5;Database=DB_SistemaCadastro;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=RN0583;Database=DB_SistemaCadastro;Trusted_Connection=True;");
             }
         }
 
@@ -44,9 +44,17 @@ namespace SistemaDeCadastroAPI.Data
             {
                 entity.ToTable("Viagem");
 
-                entity.Property(e => e.Id).ValueGeneratedOnAdd();
+                entity.Property(e => e.IdUsuarios).HasColumnName("Id_Usuarios");
 
-                entity.Property(e => e.NomeViagem).HasColumnType("ntext");
+                entity.Property(e => e.NomeViagem)
+                    .HasMaxLength(100)
+                    .IsFixedLength();
+
+                entity.HasOne(d => d.IdUsuariosNavigation)
+                    .WithMany(p => p.Viagems)
+                    .HasForeignKey(d => d.IdUsuarios)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_usuarios");
             });
 
             OnModelCreatingPartial(modelBuilder);

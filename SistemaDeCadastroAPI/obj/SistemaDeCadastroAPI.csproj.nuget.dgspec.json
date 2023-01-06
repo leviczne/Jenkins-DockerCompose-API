@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {}
+    "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {
+    "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+        "projectUniqueName": "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
         "projectName": "SistemaDeCadastroAPI",
-        "projectPath": "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+        "projectPath": "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
         "packagesPath": "C:\\Users\\levi.santos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\levi.santos\\Source\\Repos\\api\\SistemaDeCadastroAPI\\obj\\",
+        "outputPath": "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\levi.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
