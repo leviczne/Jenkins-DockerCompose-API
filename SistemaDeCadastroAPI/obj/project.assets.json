@@ -2222,19 +2222,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\levi.santos\\.nuget\\packages\\": {}
+    "C:\\Users\\Levi Cezane\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Levi Cezane\\Source\\Repos\\API-CRUDD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
       "projectName": "SistemaDeCadastroAPI",
-      "projectPath": "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
-      "packagesPath": "C:\\Users\\levi.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\levi.santos\\Source\\Repos\\api2\\SistemaDeCadastroAPI\\obj\\",
+      "projectPath": "C:\\Users\\Levi Cezane\\Source\\Repos\\API-CRUDD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+      "packagesPath": "C:\\Users\\Levi Cezane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Levi Cezane\\Source\\Repos\\API-CRUDD\\SistemaDeCadastroAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\levi.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Levi Cezane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2304,7 +2304,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

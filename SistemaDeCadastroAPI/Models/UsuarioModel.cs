@@ -7,7 +7,7 @@ namespace SistemaDeCadastroAPI.Models
     {
         public UsuarioModel()
         {
-            Viagems = new HashSet<ViagemModel>();
+            UsuariosViagems = new HashSet<UsuariosViagemModel>();
         }
 
         public int Id { get; set; }
@@ -15,6 +15,6 @@ namespace SistemaDeCadastroAPI.Models
         public string Email { get; set; } = null!;
         public string Senha { get; set; } = null!;
 
-        public virtual ICollection<ViagemModel> Viagems { get; set; }
+        public virtual ICollection<UsuariosViagemModel> UsuariosViagems { get; set; }
     }
 }

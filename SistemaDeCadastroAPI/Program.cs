@@ -27,6 +27,7 @@ namespace SistemaDeCadastroAPI
                 );
             builder.Services.AddScoped<IUsuarioRepositorio,UsuarioRepositorio>();
             builder.Services.AddScoped<IViagemRepositorio,ViagemRepositorio>();
+            builder.Services.AddScoped<IUsuariosViagemRepositorio, UsuariosViagemRepositorio>();
 
             var app = builder.Build();
 

@@ -61,13 +61,37 @@ namespace SistemaDeCadastroAPI.Migrations
                     b.Property<int>("Ano")
                         .HasColumnType("int");
 
+                    b.Property<int>("IdUsuarios")
+                        .HasColumnType("int")
+                        .HasColumnName("Id_Usuarios");
+
                     b.Property<string>("NomeViagem")
                         .IsRequired()
-                        .HasColumnType("ntext");
+                        .HasMaxLength(100)
+                        .HasColumnType("nchar(100)")
+                        .IsFixedLength();
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdUsuarios");
+
                     b.ToTable("Viagem", (string)null);
+                });
+
+            modelBuilder.Entity("SistemaDeCadastroAPI.Models.ViagemModel", b =>
+                {
+                    b.HasOne("SistemaDeCadastroAPI.Models.UsuarioModel", "IdUsuariosNavigation")
+                        .WithMany("Viagems")
+                        .HasForeignKey("IdUsuarios")
+                        .IsRequired()
+                        .HasConstraintName("fk_usuarios");
+
+                    b.Navigation("IdUsuariosNavigation");
+                });
+
+            modelBuilder.Entity("SistemaDeCadastroAPI.Models.UsuarioModel", b =>
+                {
+                    b.Navigation("Viagems");
                 });
 #pragma warning restore 612, 618
         }

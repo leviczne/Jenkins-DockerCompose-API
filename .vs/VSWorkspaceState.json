@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SistemaDeCadastroAPI",
+    "\\SistemaDeCadastroAPI\\Controllers",
+    "\\SistemaDeCadastroAPI\\Data",
+    "\\SistemaDeCadastroAPI\\Models",
+    "\\SistemaDeCadastroAPI\\Repositorios",
+    "\\SistemaDeCadastroAPI\\Repositorios\\Intefaces"
+  ],
+  "SelectedNode": "\\SistemaDeCadastroAPI\\Controllers\\UsuarioController.cs",
+  "PreviewInSolutionExplorer": false
+}
