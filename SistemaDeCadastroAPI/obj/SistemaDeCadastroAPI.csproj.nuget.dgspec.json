@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Levi Cezane\\source\\repos\\API-CRUDD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {}
+    "C:\\Users\\Levi Cezane\\Source\\Repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Levi Cezane\\source\\repos\\API-CRUDD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {
+    "C:\\Users\\Levi Cezane\\Source\\Repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Levi Cezane\\source\\repos\\API-CRUDD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Levi Cezane\\Source\\Repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
         "projectName": "SistemaDeCadastroAPI",
-        "projectPath": "C:\\Users\\Levi Cezane\\source\\repos\\API-CRUDD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+        "projectPath": "C:\\Users\\Levi Cezane\\Source\\Repos\\API-CRUD\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
         "packagesPath": "C:\\Users\\Levi Cezane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Levi Cezane\\source\\repos\\API-CRUDD\\SistemaDeCadastroAPI\\obj\\",
+        "outputPath": "C:\\Users\\Levi Cezane\\Source\\Repos\\API-CRUD\\SistemaDeCadastroAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Levi Cezane\\AppData\\Roaming\\NuGet\\NuGet.Config",
