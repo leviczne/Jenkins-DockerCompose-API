@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SistemaDeCadastroAPI.Data;
 using SistemaDeCadastroAPI.Repositorios;
@@ -27,6 +28,9 @@ namespace SistemaDeCadastroAPI
                 .AddDbContext<SistemaCadastroDBContex>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
                 );
+            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<SistemaCadastroDBContex>()
+                .AddDefaultTokenProviders();
             builder.Services.AddControllers().AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;

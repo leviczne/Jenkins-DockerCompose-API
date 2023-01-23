@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SistemaDeCadastroAPI.Models;
 using SistemaDeCadastroAPI.Models.DTO_s;
@@ -16,9 +17,14 @@ namespace SistemaDeCadastroAPI.Controllers
     public class UsuarioController : ControllerBase
     {
        private readonly IUsuarioRepositorio _usuarioRepositorio;
-        public UsuarioController(IUsuarioRepositorio usuarioRepositorio)
+       private readonly UserManager<IdentityUser> _userManager;
+       private readonly SignInManager<IdentityUser> _signInManager;
+        public UsuarioController(IUsuarioRepositorio usuarioRepositorio,UserManager<IdentityUser> userManager,
+            SignInManager<IdentityUser> signInManager)
         {
             _usuarioRepositorio = usuarioRepositorio;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
   
         [HttpGet]
@@ -62,7 +68,13 @@ namespace SistemaDeCadastroAPI.Controllers
            UsuarioModel usuario = await _usuarioRepositorio.Adicionar(usuarioModel);
            return Ok(usuario);
         }
-       
+
+        [HttpPost("register")]
+        public async Task<ActionResult<UsuarioModel>>RegisterUser([FromBody] UsuarioModel usuarioModel)
+        {
+           
+        }
+
         [HttpPut("{id}")]
         public async Task<ActionResult<UsuarioModel>> Atualizar([FromBody] UsuarioModel usuarioModel,int id)
         {

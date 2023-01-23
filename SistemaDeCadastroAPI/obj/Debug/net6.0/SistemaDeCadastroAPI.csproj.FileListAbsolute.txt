@@ -506,3 +506,4 @@ C:\Users\levi.santos\Source\Repos\bckp\SistemaDeCadastroAPI\obj\Debug\net6.0\ref
 C:\Users\levi.santos\Source\Repos\bckp\SistemaDeCadastroAPI\obj\Debug\net6.0\SistemaDeCadastroAPI.pdb
 C:\Users\levi.santos\Source\Repos\bckp\SistemaDeCadastroAPI\obj\Debug\net6.0\SistemaDeCadastroAPI.genruntimeconfig.cache
 C:\Users\levi.santos\Source\Repos\bckp\SistemaDeCadastroAPI\obj\Debug\net6.0\ref\SistemaDeCadastroAPI.dll
+C:\Users\levi.santos\Source\Repos\bckp\SistemaDeCadastroAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

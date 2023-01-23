@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using SistemaDeCadastroAPI.Models;
@@ -7,7 +8,7 @@ using SistemaDeCadastroAPI.Models;
 
 namespace SistemaDeCadastroAPI.Data
 {
-    public partial class SistemaCadastroDBContex : DbContext
+    public partial class SistemaCadastroDBContex : IdentityDbContext
     {
         public SistemaCadastroDBContex()
         {
