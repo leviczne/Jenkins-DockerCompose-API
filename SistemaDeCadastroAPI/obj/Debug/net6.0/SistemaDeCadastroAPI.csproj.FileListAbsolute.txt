@@ -433,3 +433,7 @@ C:\Users\Levi Cezane\Source\Repos\API-CRUD\SistemaDeCadastroAPI\obj\Debug\net6.0
 C:\Users\Levi Cezane\Source\Repos\API-CRUD\SistemaDeCadastroAPI\obj\Debug\net6.0\SistemaDeCadastroAPI.pdb
 C:\Users\Levi Cezane\Source\Repos\API-CRUD\SistemaDeCadastroAPI\obj\Debug\net6.0\SistemaDeCadastroAPI.genruntimeconfig.cache
 C:\Users\Levi Cezane\Source\Repos\API-CRUD\SistemaDeCadastroAPI\obj\Debug\net6.0\ref\SistemaDeCadastroAPI.dll
+C:\Users\Levi Cezane\source\repos\API-CRUD\SistemaDeCadastroAPI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\Levi Cezane\source\repos\API-CRUD\SistemaDeCadastroAPI\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\Levi Cezane\source\repos\API-CRUD\SistemaDeCadastroAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Levi Cezane\source\repos\API-CRUD\SistemaDeCadastroAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

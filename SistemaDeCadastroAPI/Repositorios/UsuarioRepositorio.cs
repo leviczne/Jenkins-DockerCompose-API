@@ -18,14 +18,14 @@ namespace SistemaDeCadastroAPI.Repositorios
 
         public async Task<UsuarioModel> BuscarPorId(int id)
         {
-            return await _dbContext.Usuarios.FirstOrDefaultAsync(x=> x.Id==id);
+            return await _dbContext.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<List<UsuarioDTO>> BuscarTodosUsuarios()
         {
-            return await _dbContext.Usuarios.Select(x=> new UsuarioDTO {Name=x.Name, Email = x.Email}).ToListAsync();
+            return await _dbContext.Usuarios.Select(x => new UsuarioDTO { Name = x.Name, Email = x.Email }).ToListAsync();
         }
-         public async Task<UsuarioModel> Adicionar(UsuarioModel usuario)
+        public async Task<UsuarioModel> Adicionar(UsuarioModel usuario)
         {
             await _dbContext.Usuarios.AddAsync(usuario);
             await _dbContext.SaveChangesAsync();
@@ -35,7 +35,7 @@ namespace SistemaDeCadastroAPI.Repositorios
         public async Task<UsuarioModel> Atualizar(UsuarioModel usuario, int id)
         {
             UsuarioModel usuarioPorId = await BuscarPorId(id);
-            if(usuarioPorId == null)
+            if (usuarioPorId == null)
             {
                 throw new Exception($"Usuário para o ID: {id} não foi encontrado no banco de dados");
             }
@@ -60,7 +60,9 @@ namespace SistemaDeCadastroAPI.Repositorios
             return true;
         }
 
-       
-    
+        public async Task<UsuarioModel> BuscarViagens(string nome)
+        {
+            return await _dbContext.Usuarios.Include(x => x.UsuariosViagems).FirstOrDefaultAsync(x => x.Name == nome);
+        }
     }
 }

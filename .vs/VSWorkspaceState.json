@@ -1,13 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SistemaDeCadastroAPI",
-    "\\SistemaDeCadastroAPI\\Controllers",
-    "\\SistemaDeCadastroAPI\\Data",
-    "\\SistemaDeCadastroAPI\\Models",
-    "\\SistemaDeCadastroAPI\\Repositorios",
-    "\\SistemaDeCadastroAPI\\Repositorios\\Intefaces"
+    "\\SistemaDeCadastroAPI"
   ],
-  "SelectedNode": "\\SistemaDeCadastroAPI\\Controllers\\UsuarioController.cs",
+  "SelectedNode": "\\SistemaDeCadastroAPI\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

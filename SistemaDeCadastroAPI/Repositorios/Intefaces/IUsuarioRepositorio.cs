@@ -8,6 +8,7 @@ namespace SistemaDeCadastroAPI.Repositorios.Intefaces
         Task<List<UsuarioDTO>>BuscarTodosUsuarios();
         Task<UsuarioModel> BuscarPorId(int id);
         Task<UsuarioModel> Adicionar(UsuarioModel usuario);
+        Task<UsuarioModel> BuscarViagens(string nome);
         Task<UsuarioModel> Atualizar(UsuarioModel usuario,int id);
         Task<bool> Apagar(int id);
          

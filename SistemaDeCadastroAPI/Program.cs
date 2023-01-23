@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using SistemaDeCadastroAPI.Data;
 using SistemaDeCadastroAPI.Repositorios;
 using SistemaDeCadastroAPI.Repositorios.Intefaces;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace SistemaDeCadastroAPI
 {
@@ -25,6 +27,10 @@ namespace SistemaDeCadastroAPI
                 .AddDbContext<SistemaCadastroDBContex>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
                 );
+            builder.Services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+            });
             builder.Services.AddScoped<IUsuarioRepositorio,UsuarioRepositorio>();
             builder.Services.AddScoped<IViagemRepositorio,ViagemRepositorio>();
             builder.Services.AddScoped<IUsuariosViagemRepositorio, UsuariosViagemRepositorio>();

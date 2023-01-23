@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using SistemaDeCadastroAPI.Models;
 using SistemaDeCadastroAPI.Models.DTO_s;
 using SistemaDeCadastroAPI.Repositorios.Intefaces;
+using System.Net;
 
 namespace SistemaDeCadastroAPI.Controllers
 {
@@ -31,9 +32,23 @@ namespace SistemaDeCadastroAPI.Controllers
         public async Task<ActionResult<List<UsuarioModel>>> BuscarPorId(int id)
         {
             UsuarioModel usuario = await _usuarioRepositorio.BuscarPorId(id);
+            if (usuario == null)
+            {
+                throw new Exception("O usuário com este ID nao existe");
+            }
+            else
+            {
+                return Ok(usuario);
+            }
+        }
+
+        [HttpGet("nome")]
+        public async Task<ActionResult<UsuarioModel>> BuscarViagens(string nome)
+        {
+            UsuarioModel usuario = await _usuarioRepositorio.BuscarViagens(nome);
             return Ok(usuario);
         }
-  
+
         [HttpPost]
         public async Task<ActionResult<UsuarioModel>> Cadastrar([FromBody]UsuarioModel usuarioModel)
         {
