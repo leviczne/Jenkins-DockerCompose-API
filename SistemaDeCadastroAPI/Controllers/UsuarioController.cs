@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using SistemaDeCadastroAPI.Models;
 using SistemaDeCadastroAPI.Models.DTO_s;
 using SistemaDeCadastroAPI.Repositorios.Intefaces;
+using System.Collections.Generic;
 using System.Net;
 
 namespace SistemaDeCadastroAPI.Controllers
@@ -46,7 +47,13 @@ namespace SistemaDeCadastroAPI.Controllers
         public async Task<ActionResult<UsuarioModel>> BuscarViagens(string nome)
         {
             UsuarioModel usuario = await _usuarioRepositorio.BuscarViagens(nome);
-            return Ok(usuario);
+            List<String> NomesViagens = new List<String>(); 
+            foreach (var Viagem in usuario.UsuariosViagems)
+            {
+                NomesViagens.Add(Viagem.IdViagemNavigation.NomeViagem);
+            }
+
+            return Ok(NomesViagens);
         }
 
         [HttpPost]

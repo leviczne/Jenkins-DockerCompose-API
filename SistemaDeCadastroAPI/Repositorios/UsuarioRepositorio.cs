@@ -62,7 +62,7 @@ namespace SistemaDeCadastroAPI.Repositorios
 
         public async Task<UsuarioModel> BuscarViagens(string nome)
         {
-            return await _dbContext.Usuarios.Include(x => x.UsuariosViagems).FirstOrDefaultAsync(x => x.Name == nome);
+           return await _dbContext.Usuarios.Include(x => x.UsuariosViagems).ThenInclude(x => x.IdViagemNavigation).FirstOrDefaultAsync(x => x.Name == nome);
         }
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using SistemaDeCadastroAPI.Models;
 
+
 namespace SistemaDeCadastroAPI.Data
 {
     public partial class SistemaCadastroDBContex : DbContext
