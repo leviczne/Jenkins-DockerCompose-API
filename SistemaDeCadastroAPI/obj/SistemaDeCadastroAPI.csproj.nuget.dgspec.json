@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\levi.santos\\Source\\Repos\\bckp\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {}
+    "C:\\Users\\Levi Cezane\\source\\repos\\Bckpp\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\levi.santos\\Source\\Repos\\bckp\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {
+    "C:\\Users\\Levi Cezane\\source\\repos\\Bckpp\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\levi.santos\\Source\\Repos\\bckp\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Levi Cezane\\source\\repos\\Bckpp\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
         "projectName": "SistemaDeCadastroAPI",
-        "projectPath": "C:\\Users\\levi.santos\\Source\\Repos\\bckp\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
-        "packagesPath": "C:\\Users\\levi.santos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\levi.santos\\Source\\Repos\\bckp\\SistemaDeCadastroAPI\\obj\\",
+        "projectPath": "C:\\Users\\Levi Cezane\\source\\repos\\Bckpp\\SistemaDeCadastroAPI\\SistemaDeCadastroAPI.csproj",
+        "packagesPath": "C:\\Users\\Levi Cezane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Levi Cezane\\source\\repos\\Bckpp\\SistemaDeCadastroAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\levi.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Levi Cezane\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +43,10 @@
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
               "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -75,6 +79,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.26.0, )"
             }
           },
           "imports": [
@@ -96,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

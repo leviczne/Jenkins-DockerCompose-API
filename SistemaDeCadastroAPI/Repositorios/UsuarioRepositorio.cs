@@ -1,19 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using SistemaDeCadastroAPI.Data;
 using SistemaDeCadastroAPI.Models;
 using SistemaDeCadastroAPI.Models.DTO_s;
 using SistemaDeCadastroAPI.Repositorios.Intefaces;
+using System.Web.Http.Results;
 
 namespace SistemaDeCadastroAPI.Repositorios
 {
     public class UsuarioRepositorio : IUsuarioRepositorio
     {
         private readonly SistemaCadastroDBContex _dbContext;
+      
 
 
         public UsuarioRepositorio(SistemaCadastroDBContex sistemaCadastroDBContex)
         {
             _dbContext = sistemaCadastroDBContex;
+          
         }
 
         public async Task<UsuarioModel> BuscarPorId(int id)
@@ -21,9 +25,9 @@ namespace SistemaDeCadastroAPI.Repositorios
             return await _dbContext.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<List<UsuarioDTO>> BuscarTodosUsuarios()
+        public async Task<List<UsuarioModel>> BuscarTodosUsuarios()
         {
-            return await _dbContext.Usuarios.Select(x => new UsuarioDTO { Name = x.Name, Email = x.Email }).ToListAsync();
+            return await _dbContext.Usuarios.ToListAsync();
         }
         public async Task<UsuarioModel> Adicionar(UsuarioModel usuario)
         {
@@ -64,5 +68,6 @@ namespace SistemaDeCadastroAPI.Repositorios
         {
            return await _dbContext.Usuarios.Include(x => x.UsuariosViagems).ThenInclude(x => x.IdViagemNavigation).FirstOrDefaultAsync(x => x.Name == nome);
         }
+
     }
 }

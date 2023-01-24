@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SistemaDeCadastroAPI"
+    "\\SistemaDeCadastroAPI",
+    "\\SistemaDeCadastroAPI\\Controllers",
+    "\\SistemaDeCadastroAPI\\Repositorios"
   ],
-  "SelectedNode": "\\SistemaDeCadastroAPI\\appsettings.json",
+  "SelectedNode": "\\SistemaDeCadastroAPI\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

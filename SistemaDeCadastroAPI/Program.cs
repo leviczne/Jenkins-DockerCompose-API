@@ -1,8 +1,12 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using SistemaDeCadastroAPI.Data;
 using SistemaDeCadastroAPI.Repositorios;
 using SistemaDeCadastroAPI.Repositorios.Intefaces;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -23,11 +27,54 @@ namespace SistemaDeCadastroAPI
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SistemCadastroAPI", Version = "v1" });
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                {
+                    Name = "Authorization",
+                    Type= SecuritySchemeType.ApiKey,
+                    Scheme= "Bearer",
+                    BearerFormat= "JWT",
+                    In= ParameterLocation.Header,
+                    Description= "Header de autorização JWT usando o esquema Bearer"
+
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type= ReferenceType.SecurityScheme,
+                                Id= "Bearer"
+                            }
+                        },
+                        new string[]{}
+                     }
+                });
+
+            });
             builder.Services.AddEntityFrameworkSqlServer()
                 .AddDbContext<SistemaCadastroDBContex>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
                 );
+            builder.Services.AddAuthentication(
+                JwtBearerDefaults.AuthenticationScheme).
+                AddJwtBearer(options =>
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidAudience = builder.Configuration["TokenConfiguration:Audience"],
+                    ValidIssuer = builder.Configuration["TokenConfiguration:Issuer"],
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]))
+                });
+                
             builder.Services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<SistemaCadastroDBContex>()
                 .AddDefaultTokenProviders();
@@ -56,7 +103,7 @@ namespace SistemaDeCadastroAPI
 
             });
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

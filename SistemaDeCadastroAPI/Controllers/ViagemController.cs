@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SistemaDeCadastroAPI.Models;
 using SistemaDeCadastroAPI.Models.DTO_s;
@@ -7,6 +8,7 @@ using SistemaDeCadastroAPI.Repositorios.Intefaces;
 
 namespace SistemaDeCadastroAPI.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("api/[controller]")]
     [ApiController]
     public class ViagemController : ControllerBase

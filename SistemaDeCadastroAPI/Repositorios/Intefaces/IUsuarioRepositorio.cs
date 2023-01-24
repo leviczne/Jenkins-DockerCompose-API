@@ -5,7 +5,7 @@ namespace SistemaDeCadastroAPI.Repositorios.Intefaces
 {
     public interface IUsuarioRepositorio
     {
-        Task<List<UsuarioDTO>>BuscarTodosUsuarios();
+        Task<List<UsuarioModel>>BuscarTodosUsuarios();
         Task<UsuarioModel> BuscarPorId(int id);
         Task<UsuarioModel> Adicionar(UsuarioModel usuario);
         Task<UsuarioModel> BuscarViagens(string nome);

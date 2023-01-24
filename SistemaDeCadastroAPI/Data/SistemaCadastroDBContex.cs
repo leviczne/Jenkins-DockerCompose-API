@@ -8,7 +8,7 @@ using SistemaDeCadastroAPI.Models;
 
 namespace SistemaDeCadastroAPI.Data
 {
-    public partial class SistemaCadastroDBContex : IdentityDbContext
+    public partial class SistemaCadastroDBContex :IdentityDbContext
     {
         public SistemaCadastroDBContex()
         {
@@ -34,6 +34,7 @@ namespace SistemaDeCadastroAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<UsuarioModel>(entity =>
             {
                 entity.Property(e => e.Email).HasMaxLength(150);
@@ -77,5 +78,8 @@ namespace SistemaDeCadastroAPI.Data
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+     
+
+
     }
 }

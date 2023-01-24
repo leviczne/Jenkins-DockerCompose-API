@@ -6,8 +6,8 @@ namespace SistemaDeCadastroAPI.Models.DTO_s
     {
         
   
-        public string Name { get; set; }
         public string Email { get; set; }
-        public virtual ICollection<ViagemModel> Viagems { get; set; }
+        public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }
