@@ -5,6 +5,6 @@
     "\\SistemaDeCadastroAPI\\Controllers",
     "\\SistemaDeCadastroAPI\\Repositorios"
   ],
-  "SelectedNode": "\\SistemaDeCadastroAPI\\Program.cs",
+  "SelectedNode": "\\SistemaDeCadastroAPI\\Controllers\\ViagemController.cs",
   "PreviewInSolutionExplorer": false
 }
