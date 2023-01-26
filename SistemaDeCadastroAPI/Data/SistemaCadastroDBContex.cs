@@ -8,7 +8,7 @@ using SistemaDeCadastroAPI.Models;
 
 namespace SistemaDeCadastroAPI.Data
 {
-    public partial class SistemaCadastroDBContex :IdentityDbContext
+    public partial class SistemaCadastroDBContex :IdentityDbContext<ApplicationUser>
     {
         public SistemaCadastroDBContex()
         {

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SistemaDeCadastroAPI.Data;
+using SistemaDeCadastroAPI.Models;
 using SistemaDeCadastroAPI.Repositorios;
 using SistemaDeCadastroAPI.Repositorios.Intefaces;
 using System.Text;
@@ -75,7 +76,7 @@ namespace SistemaDeCadastroAPI
                         Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]))
                 });
                 
-            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<SistemaCadastroDBContex>()
                 .AddDefaultTokenProviders();
             builder.Services.AddControllers().AddJsonOptions(options =>

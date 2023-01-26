@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\SistemaDeCadastroAPI",
-    "\\SistemaDeCadastroAPI\\Controllers",
-    "\\SistemaDeCadastroAPI\\Repositorios"
+    "\\SistemaDeCadastroAPI\\Migrations"
   ],
-  "SelectedNode": "\\SistemaDeCadastroAPI\\Controllers\\ViagemController.cs",
+  "SelectedNode": "\\SistemaDeCadastroAPI\\Migrations\\20230125232426_Identityy.cs",
   "PreviewInSolutionExplorer": false
 }

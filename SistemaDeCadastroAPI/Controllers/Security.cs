@@ -16,12 +16,12 @@ namespace SistemaDeCadastroAPI.Controllers
     [ApiController]
     public class Security : ControllerBase
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IConfiguration _configuration;
 
-        public Security(UserManager<IdentityUser> userManager
-            , SignInManager<IdentityUser> signInManager, IConfiguration configuration)
+        public Security(UserManager<ApplicationUser> userManager
+            , SignInManager<ApplicationUser> signInManager, IConfiguration configuration)
         {
            
             _userManager = userManager;
@@ -33,10 +33,11 @@ namespace SistemaDeCadastroAPI.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<UsuarioModel>> RegisterUser([FromBody] UsuarioDTO usuarioModel)
         {
-            var user = new IdentityUser
+            var user = new ApplicationUser
             {
                 UserName = usuarioModel.Email,
                 Email = usuarioModel.Email,
+                ViajanteName = usuarioModel.ViajanteName,
                 EmailConfirmed = true
             };
             var result = await _userManager.CreateAsync(user, usuarioModel.Password);
