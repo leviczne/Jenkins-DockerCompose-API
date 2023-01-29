@@ -23,6 +23,8 @@ namespace SistemaDeCadastroAPI.Data
         public virtual DbSet<UsuariosViagemModel> UsuariosViagems { get; set; } = null!;
         public virtual DbSet<ViagemModel> Viagems { get; set; } = null!;
 
+        public virtual DbSet<ApplicationUser> ApplicationUsers { get; set; } = null!;
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

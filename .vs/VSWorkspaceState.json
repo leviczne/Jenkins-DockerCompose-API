@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\SistemaDeCadastroAPI",
+    "\\SistemaDeCadastroAPI\\Controllers",
     "\\SistemaDeCadastroAPI\\Migrations"
   ],
-  "SelectedNode": "\\SistemaDeCadastroAPI\\Migrations\\20230125232426_Identityy.cs",
+  "SelectedNode": "\\SistemaDeCadastroAPI\\Controllers\\Security.cs",
   "PreviewInSolutionExplorer": false
 }

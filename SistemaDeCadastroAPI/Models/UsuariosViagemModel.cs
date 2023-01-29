@@ -8,7 +8,9 @@ namespace SistemaDeCadastroAPI.Models
         public int Id { get; set; }
         public int IdUsuarios { get; set; }
         public int IdViagem { get; set; }
+        public int IdAspNetUsers { get; set; }
 
+        public virtual ApplicationUser IdAspNetUsersNavigation { get; set; }
         public virtual UsuarioModel IdUsuariosNavigation { get; set; } = null!;
         public virtual ViagemModel IdViagemNavigation { get; set; } = null!;
     }
