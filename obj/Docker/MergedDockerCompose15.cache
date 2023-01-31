@@ -1,0 +1,17 @@
+name: dockercompose5735253738270160470
+services:
+  sistemadecadastroapi:
+    build:
+      context: C:\Users\Levi Cezane\source\repos\vvvv
+      dockerfile: SistemaDeCadastroAPI/Dockerfile
+    image: sistemadecadastroapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5226
+      published: "5226"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose5735253738270160470_default
