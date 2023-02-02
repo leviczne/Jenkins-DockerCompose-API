@@ -128,7 +128,7 @@ pipeline {
 
     stage ("Start container"){
       steps{
-        bat 'docker compose up -d --no color --wait'
+        bat 'docker compose -f "docker-compose.yml" up -d --build '
         bat 'docker composer ps'
       }
     }    
