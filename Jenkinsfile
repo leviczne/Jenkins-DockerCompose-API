@@ -115,7 +115,7 @@ pipeline {
 
     } 
     
-    stage ("verfify tooling"){
+    stage ("Verfify tooling"){
         steps{
             bat '''
             docker version
@@ -125,8 +125,13 @@ pipeline {
             '''
         }
     }
-    
 
+    stage ("Start container"){
+      steps{
+        bat 'docker compose up -d --no color --wait'
+        bat 'docker composer ps'
+      }
+    }    
   } 
 
   post { 
