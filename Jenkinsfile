@@ -105,7 +105,7 @@ pipeline {
 
                else { 
 
-                   bat (script: 'dotnet test ./SistemaDeCadastroAPI/SistemaDeCadastroAPI.csproj ')   
+                   bat (script: 'dotnet test ~/SistemaDeCadastroAPI/SistemaDeCadastroAPI.csproj ')   
 
                } 
 
