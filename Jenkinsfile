@@ -99,13 +99,13 @@ pipeline {
 
                if (isUnix()){ 
 
-                sh(script: 'dotnet test -l:trx')   
+                sh(script: 'dotnet test ./SistemaDeCadastroAPI/SistemaDeCadastroAPI.csproj -l:trx')   
 
                } 
 
                else { 
 
-                   bat (script: 'dotnet test -l:trx')   
+                   bat (script: 'dotnet test ./SistemaDeCadastroAPI/SistemaDeCadastroAPI.csproj -l:trx')   
 
                } 
 
