@@ -55,7 +55,7 @@ pipeline {
 
             else { 
 
-                bat (script: 'dotnet restore') 
+                bat (script: 'dotnet restore ./vvvv/SistemaDeCadastroAPI/SistemaDeCadastroAPI.csproj')
 
                  
 
