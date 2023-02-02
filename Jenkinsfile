@@ -81,7 +81,7 @@ pipeline {
 
               else{ 
 
-                  bat(script: 'dotnet build --configuration Release', returnStdout: true) 
+                  bat(script: 'dotnet build ./SistemaDeCadastroAPI/SistemaDeCadastroAPI.csproj --configuration Release', returnStdout: true) 
 
               } 
 
